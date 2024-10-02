@@ -1,0 +1,150 @@
+.UserForm {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--dark-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+form {
+    font-family: var(--regular-font);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: none;
+    background-color: rgb(0,0,0, 0.1);
+    border-radius: 0rem 1rem 1rem 0rem;
+    backdrop-filter: blur(10px);
+}
+h2 {
+    color: var(--light-color);
+    text-shadow: 0 0 5px rgba(0,0,0,0.25);
+    font-size: 40px;
+}
+.input-fields, .input-details, .submit-btn {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.input-fields>input::placeholder, .input-details>textarea::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+.input-fields input, .input-details textarea{
+    font-family: var(--regular-font);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    color: var(--light-color);
+    border: 1px solid rgba(255, 255,255,0.4);
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+.input-details textarea {
+    resize: none;
+    min-height: 200px;
+    height: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+.submit-btn input {
+    border: none;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px 80px;
+    font-size: 25px;
+    width: 100%;
+    font-family: var(--custom-font);
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 30px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.submit-btn input:hover {
+    background-color: rgb(62, 62, 62);
+}
+
+.form-parent-div {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../assets/form-bg.jpg);
+    box-sizing: border-box;
+    width: 45%;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.other-contacts {
+    border-radius: 1rem 0 0 1rem;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-icons {
+    padding: 20px;
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+.contact-icons > a {
+    text-decoration: none;
+    color: white;
+}
+.contact-icons > a > svg {
+    height: 40px;
+    width: 40px;
+}
+
+@media(max-width: 768px) {
+    .UserForm {
+        height: fit-content;
+        padding-bottom: 100px;
+        align-items: center;
+    }
+    form {
+        padding: 25px;
+        padding-top: 0px;
+        padding-bottom: 40px;
+        border-radius: 1rem 1rem 0 0;
+    }
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .input-fields input,.input-details textarea {
+        font-size: 15px;
+    }
+    .submit-btn input {
+        font-size: 20px;
+    }
+    .submit-btn input:hover {
+        background-color: rgb(62, 62, 62);
+    }
+    .form-parent-div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background-image: url(../assets/form-bg.jpg);
+        box-sizing: border-box;
+        width: 70%;
+        height: fit-content;
+        border-radius: 1rem;
+    }
+    .other-contacts {
+        height: fit-content;
+        justify-content: center;
+        /* border: 1rem; */
+    }
+    
+    .contact-icons {
+        padding: 20px;
+        gap: 50px;
+    }
+}

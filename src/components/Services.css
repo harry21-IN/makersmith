@@ -1,0 +1,102 @@
+.Services {
+    font-family: var(--regular-font);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.serv-heading {
+    justify-content: center;
+    font-size: 40px;
+}
+.serv-heading > h2 {
+    color: var(--dark-color);
+}
+.serv-list {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    width: 100%;
+}
+.serv-list div:nth-child(n){
+    color: var(--dark-color);
+}
+.image-div {
+    border: none;
+}
+.image-div > img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
+}
+.serv-list > div > h3 {
+    text-shadow: 0 0 5px rgba(0,0,0,0.25);
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 30px;
+    font-weight: bold;
+}
+.serv-list > div > span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media(max-width: 768px){
+    .Services {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .serv-heading {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 50px;
+    }
+    .serv-list {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        width: 100%;
+        
+    }
+    .serv-list > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0pc 0 5px rgba(0,0,0,0.25);
+        padding: 30px 10px;
+        border-radius: 1rem;
+        background-color: #e6e6e6;
+    }
+    .image-div > img {
+        width: 80%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0pc 0 5px rgba(0,0,0,0.25);
+    }
+    .serv-list > div > h3 {
+        text-shadow: 0 0 5px rgba(0,0,0,0.25);
+        font-family: "Comic Neue", cursive;
+        font-weight: 700;
+        font-style: normal; 
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .serv-list > div > span {
+        font-size: 17px;
+        font-weight: 500;
+    }
+}

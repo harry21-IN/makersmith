@@ -1,0 +1,27 @@
+.Scrolling_an1 {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 40px;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 70px;
+    color: white;
+    width: 100%;
+}
+
+.scroll-text {
+    display: inline-block;
+    padding-right: 10px;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
